@@ -1,0 +1,78 @@
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+
+
+
+<div class="page-header">
+  <h1>All PGS available near The NorthCap University,Gurgaon </h1>
+</div>
+
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>PG_NAME</th>         
+        <th>PG_ADDRESS</th>
+        <th>CHECK OUT</th>
+
+
+        </tr>
+
+
+    </thead>
+
+
+
+
+<% @pgs.each do |t| %>
+<body>
+
+
+<div class="container">
+    <tbody>
+      <tr>
+     <td>   <%=t.Pg_name%></td>
+ <td> <%=       t.Pg_address     %></td>
+<td>  <%= link_to("DETAILS", {:controller=>'pgs', :action=>'show', :id=>t.id} , :class=>'action show') %>  </td>
+
+
+      </tr>      
+      </tbody>
+
+
+</body>
+<br>
+
+
+
+<% end %>
+
+
+  </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
