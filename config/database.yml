@@ -1,0 +1,20 @@
+development:
+   adapter: mysql2
+   database: pg_book
+   username: root
+   password: 100319975225
+   host: localhost
+
+   test:
+   adapter: mysql2
+   database: pg_book
+   username: root
+   password: 100319975225
+   host: localhost
+
+production:
+   adapter: mysql2
+   database: pg_book
+   username: root
+   password: 100319975225
+   host: localhost
